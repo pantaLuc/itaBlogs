@@ -1,0 +1,485 @@
+/*Element GEneraux */
+*{
+    box-sizing: border-box ;
+    }
+    
+    .row::after{
+        content: "" ;
+        clear: both;
+        display: block;
+    }
+    
+    [class*="col-"]{
+        float:left;
+        padding:15px;
+        /*border: 1px solid red ;*/
+    }
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+   
+    
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+    
+    }
+    a{
+        text-decoration: none;
+    
+    }
+    
+    /* HEADER */
+
+    .contenaire{
+
+    }
+   .image{
+       background:url("images/fondvraie1.png");
+       background-size:cover;
+       height:881px;
+   }
+.image input{
+  margin-left: 275px;
+  margin-top:25px;
+  position: relative;
+  background-color:rgba(255,255,255,0.3);
+  width: 300px;
+  height:35px;
+  border-radius: 20px;
+   border: none;
+}
+.image a{
+    position: relative;
+    margin-left: -40px;
+}
+.image a i{
+    color:#fff;
+}
+
+.image input::placeholder{
+    color: #fff;
+ padding-left: 300px;
+}
+
+   .description{
+    margin-bottom: 60px;
+   }
+   .description .logo{
+      background: url("images/logo1.png");
+      background-repeat: no-repeat;
+      height: 155px;
+      
+     
+   }
+ 
+   .nav{
+      
+   }
+   .nav ul{
+    display:inline-block;
+    margin-right: -15px;
+    margin-top: 27px;
+   }
+   .nav ul li{
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+     font-size:15px; 
+     margin-right:3px;
+   }
+
+   .titre h1{
+    font-family: 'Raleway', sans-serif;
+    font-size:50px;
+    /*font-weight: bold;*/
+    margin-top: -28px;
+     
+   }
+
+   .texte p{
+    font-family: 'Raleway', sans-serif;
+    font-size:20px;
+   }
+   .texte img{
+       height: 125px;
+   }
+   .contribuer a{
+      
+       display: block;
+       width: 200px;
+       height: 40px;
+      line-height: initial;
+       border:1px solid transparent;
+       background-image: linear-gradient(to left, #185A9D 0%, #43CEA2 30%);
+       border-radius:25px;
+       text-align: center ;
+       color: #fff;
+       font-size:25px;
+       margin-bottom: 30px;
+   }
+   .million{
+       height: 200px;
+   }
+   .million img{
+         width: 450px;
+         margin-bottom: 160px;
+   }
+
+   /* Co-Founder */
+   #co-founder{
+        margin-top: 0px;
+   }
+  #co-founder .imageGauche{
+    height: 800px;
+    background: url("images/gauche.png");
+    background-repeat: no-repeat;
+    margin-top: -100px;
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .imageGauche {
+   display:none;
+    }
+
+}
+
+   #co-founder .imagedroite{
+    height: 854px;
+    
+   }
+   .imagedroite img{
+       margin-top: 300px;
+   }
+   @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .imagedroite img{
+   display: none;
+    }
+
+}
+
+   .team{
+       height: 700px;
+       text-align: center;
+   }
+
+   .team .teamdescription{
+       background-color: #fff;
+       border: 1px solid rgb(255, 255, 255s) ;
+       border-radius:5px;
+       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+       margin-top:130px;
+       
+   }
+
+   .team .teamdescription .images{
+      text-align: center;
+      margin-top: -50px;
+   }
+   .poste{
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+   }
+  .team .teamdescription .images img{
+      height: 126px;
+      border-radius: 75%;
+      margin-right: 45px ;
+  }
+
+.titre-fond{
+      font-size: 21px;
+      color: rgb(160, 160,160);
+      margin-top: -30px;
+      margin-bottom: 55px;
+      font-family: 'Raleway', sans-serif;
+  }
+
+  .sugg{
+      font-size: 25px;
+      margin-bottom: 45px;
+      font-family: 'Raleway', sans-serif;
+  }
+
+  .cont-us{
+      font-size: 21px;
+      font-weight: bold;
+      font-family: 'Raleway', sans-serif;
+      color: #43CEA2;
+  }
+
+  .cont-us i{
+      font-size: 19px;
+      padding-left: 10px;
+  }
+
+  /* BLOG  */
+  #Blog{
+    font-family: 'Raleway', sans-serif;
+    
+  }
+
+  #Blog h2{
+      font-size: 45px;
+      margin-top: -137px;
+      color: rgb(78, 78, 78);
+      text-align: center;
+  }
+
+  #Blog h4{
+      font-size: 23px;
+      font-family: #707070;
+      text-align: center;
+  }
+
+  p span{
+    color: transparent;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  }
+
+  .imagesdessus h3 span{
+      color: red;
+  }
+
+  .descriptionBlog .bordure{
+    background-color: #fff;
+    border: 1px solid rgb(255, 255, 255) ;
+    border-radius:15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    margin-top:30px;
+  }
+  .descriptionBlog .bordure .more{
+    
+    font-size: 35px;
+    font-family: 'Raleway-Regular', sans-serif;
+  }
+
+  .more a{
+    color: rgb(67,206,162);
+  }
+  .descriptionBlog img{
+      width: 100%;
+      height: 300px;
+      border-top-left-radius: 5px;
+  }
+  .degrader{
+      text-align: center;
+      cursor:pointer;
+  }
+
+.degrader p{ 
+ width: 400px;
+ height: 75px;
+ line-height: 75px;
+ color:#fff;
+ font-size:20px;
+ border-top-right-radius: 80px;
+ border-top-left-radius: 80px;
+ border-bottom-left-radius: 80px;
+ border-bottom-right-radius: 80px;
+ background-image: linear-gradient(to left, #185A9D 0%, #43CEA2 30%);
+ background-size:cover;
+
+}
+
+
+.versionMobile{
+    text-align: center;
+    height:600px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+.versionMobile h3{
+    font-size: 30px;
+    opacity: 1;
+}
+.versionMobile p{
+    font-size: 20px;
+    opacity: 1;
+}
+.versionMobile h3 span{
+    color: red;
+}
+
+
+.versionMobile .imagefond{
+  width: 100%;
+  height: 350px;
+  margin-top: 100px;
+  background: url("images/fond1.png");
+  background-size: cover;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+ 
+}
+
+.versionMobile .imagesdessus{
+  
+  width: 100%;
+  height: 300px;
+  background: url("images/dessus1.png");
+  background-size: cover;
+  position: relative;
+  opacity: 0.8;
+  margin-top: -330px;
+  border-top-right-radius: 10px;
+ border-top-left-radius: 10px;
+ border-bottom-left-radius: 10px;
+ border-bottom-right-radius: 10px;
+ text-align: center;
+  
+}
+
+.imagesdessus .tel{
+    height: 500px;
+}
+
+.imagesdessus img{
+    width: 100%;
+    margin-top:-150px;
+    height: 500px;
+}
+
+
+/* Equipe */
+
+#equipes{
+  margin-top:80px;
+  margin-bottom: 80px;
+}
+
+.container h5 i {
+    color: #707070;
+}
+
+.container p {
+    color: #707070;
+}
+
+.hauteurim1{
+    height: 90px;
+}
+.hauteurim2{
+    height: 300px;
+}
+
+.hauteurim1 img{
+    width: 80%;
+    
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .hauteurim1 img{
+   display:none;
+    }
+
+}
+
+.hauteurim2 img{
+    width: 80%;
+    margin-top: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .hauteurim2 img{
+   display:none;
+    }
+
+}
+
+.titreE{
+    margin top:200px ;
+    margin-bottom:150px;
+}
+
+.sensG , .sensD{
+    cursor: pointer;
+}
+.Cards:nth-child(2){
+    display: none;
+}
+ 
+.card {
+    background-color: #fff;
+    border: 1px solid rgb(255, 255, 255) ;
+    border-radius:15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    text-align: center;
+   
+  }
+
+  .card img{
+    height: 100px;
+    border-radius: 75%;
+     margin-top:-120px;
+     margin-left: 25px;
+    
+    }
+  .card .container{
+      line-height: 13px;
+  }
+  .card .container p{
+      margin-top: -10px;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+  .cornerRight{
+
+   height: 200px;
+}
+
+.cornerRight .div1{
+    background: url("images/basd1.png");
+}
+
+.cornerRight .div2{
+    background: url("images/basd2.png");
+    background-size: cover;
+}
+
+  /* FOOTER */
+
+  footer{
+
+    background-color: #185A9D;
+    background-size: cover;
+    text-align: center;
+    color:#fff;
+  }
+  footer .nav a{
+      color:#fff;
+  }
+  footer .logo{
+      height: 200px;
+  }
+
+  footer .logo img{
+      margin-top: 50px;
+  }
+
+  footer .fa{
+      margin-right: 10px;
+  }
+
+  
